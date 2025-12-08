@@ -12,7 +12,7 @@ export interface HeapDiff {
   }>;
 }
 
-const SUSPECT_THRESHOLD_KB = 64;
+const SUSPECT_THRESHOLD_KB = 32;
 
 export async function snapshotHeap(): Promise<HeapSnapshot> {
   // Real impl: bridge to Hermes heap snapshot or Chrome DevTools Protocol
